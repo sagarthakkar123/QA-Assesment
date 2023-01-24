@@ -22,7 +22,7 @@ public class LoginFlow {
     }
 
     public void verify_wrong_credentials_msg() {
-        final String WRONG_MSG = "Your username is invalid!";
+        final String WRONG_MSG = "Your username is in valid!";
         String actual_msg = login_page.get_confirm_msg_after_login();
         boolean does_msg_contain_wrong_msg = actual_msg.contains(WRONG_MSG);
         Assert.assertTrue(does_msg_contain_wrong_msg, "[ERR] Wrong Creds - Msg is wrong");
